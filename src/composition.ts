@@ -107,7 +107,7 @@ class Libz {
     //     console.log(book);
     //   }
     // });
-  }
+  } 
 }
 
 const book1 = new Book("To Kill a Mockingbird", 5);
