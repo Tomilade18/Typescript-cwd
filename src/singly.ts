@@ -27,6 +27,12 @@ class singlyLinkedList{
         
     }
 
+    prepend (value: number) {
+        const newNode = new singlyLinkedListNode(value)
+        newNode.next = this.head
+        this.head = newNode
+    }
+
     // prepend(value: number) {
     //     const newNode = new
     // }
@@ -78,3 +84,6 @@ class singlyLinkedList{
     }
 }
 
+const myLinkedList = new singlyLinkedList(10); // Starts with one node (10)
+myLinkedList.prepend(5); // Adds 5 to the beginning
+myLinkedList.prepend(1);
